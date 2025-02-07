@@ -92,72 +92,85 @@ html{
     text-align: center;
 }
 
-.cards-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;    
-    flex-direction: column;
-}
+// estilos de la card
 
-.card{
-    margin-top: 10px;
-    height: auto;
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+.plans-container-card{
+    // position: relative; Esto lo usaria si quisiera poner algo por encima de la misma card.
+    width: 70%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 320px;
+    margin: 50px auto 0px;
+    // padding: 0 15px;
     background-color: $blackCard;
     color: $white;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
-    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 11px 9px 23px -17px rgba(0,0,0,1);
 }
 
-.card-title{
+.plan-card-title{
     font-size: 30px;
     background-color: $greenJumpin;
-    width: 100%;
-    text-align: center;
-    padding: 8px;
     font-weight: 800;
+    display: block;
 }
-
-.card-price{
-    font-size: 28px;
-    text-align: center;
+.plan-card-price{
+    font-size: 26px;
+    font-weight: 400;
     background-color: $dark-gray;
-    width: 100%;
-    padding: 8px;
-    font-weight: 800;
 }
-
-.card-text{
-    font-size: 16px;
-    text-align: center;
-    margin-top: 12px;
+.plan-card-description{
+    font-size: 14px;
+    font-weight: 200;
+    padding: 0px 5px;
+    margin-top: 10px;
 }
-
-.card-includes{
-    @extend .card-title;
-    background-color: $dark-gray;
-    margin-top: 8px;
-}
-.card-list-element{
-    font-size: 16px;
-    margin-top: 2px;
-}
-
-.buy-button{
-    background-color: $pinkJumpin;
-    color: $white;
-    font-size: 20px;
-    width: 60%;
+.button-buy{
+    width: 150px;
+    margin-top: 20px;
     border: none;
-    padding: 10px;
-    margin-top: 5px;
-    border-radius: 20px;
-    margin-bottom: 10px;
-    font-weight: 700;
+    background-color: $pinkJumpin;
+    font-size: 20px;
+    color: $white;
+    padding: 8px;
+    border-radius: 30px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.5s;
+    &:hover{
+        color: $dark-gray;
+        background-color: $greenJumpin;
+        transform: scale(1.2);
+    }
 }
 
+a{
+    text-decoration: none;
+    color: $white;
+}
+
+.card-check-icon{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 1px;
+    background-image: url('../Assets/CheckGreenSmall.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: text-bottom;
+}
+
+.card-calendar-icon{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 1px;
+    background-image: url('../Assets/calendar30diasIconV2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: text-bottom;
+}
