@@ -94,12 +94,22 @@ html{
 
 // estilos de la card
 
+.plans-container-slider{
+    display: flex;
+    gap: 20px;
+    height: 350px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
 .plans-container-card{
     // position: relative; Esto lo usaria si quisiera poner algo por encima de la misma card.
+    scroll-snap-align: center;
     width: 70%;
     min-width: 230px;
     max-width: 300px;
-    height: 320px;
+    height: 350px;
     margin: 50px auto 0px;
     // padding: 0 15px;
     background-color: $blackCard;
@@ -108,6 +118,7 @@ html{
     border-bottom-left-radius: 20px;
     text-align: center;
     box-shadow: 11px 9px 23px -17px rgba(0,0,0,1);
+    margin-bottom: 20px;
 }
 
 .plan-card-title{
@@ -142,7 +153,7 @@ html{
     &:hover{
         color: $dark-gray;
         background-color: $greenJumpin;
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
 }
 
