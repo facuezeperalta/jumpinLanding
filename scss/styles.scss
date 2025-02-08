@@ -97,7 +97,7 @@ html{
 .plans-container-slider{
     display: flex;
     gap: 20px;
-    height: 350px;
+    height: auto;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
