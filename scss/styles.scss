@@ -39,6 +39,17 @@ html{
     }
 }
 
+@mixin iconPageSpan($width,$heigth){
+    display: inline-block;
+    width: $width;
+    height: $heigth;
+    margin-right: 5px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: text-bottom;
+}
+
 //navBar mobile
 .mobile-menu{
     background-color: $blackCard;
@@ -77,6 +88,7 @@ html{
     width: 100%;
     height: auto;
     color: $white;
+    text-align: center;
    
 }
 
@@ -184,4 +196,89 @@ a{
     background-position: center;
     background-repeat: no-repeat;
     vertical-align: text-bottom;
+}
+
+.extras-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.extras-inscripcion{
+    margin-top: 10px;
+    background-color: $pinkJumpin;
+    color:$white;
+    font-size: 16px;
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 11px 9px 23px -17px rgba(0,0,0,1);
+}
+
+.extras-subtitle{
+    margin-top: 10px;
+    font-size: 20px;
+    padding:10px 0px;
+}
+
+.extras-icon-cinta{
+    @include iconPageSpan(30px,30px);
+    background-image: url('../Assets/cintadecorreroIcon.png');
+    
+}
+
+.extras-icon-indoorBike{
+    @include iconPageSpan(30px,30px);
+    background-image: url('../Assets/indoorbike_icon.png')
+    
+}
+
+.extra-subtitle-indoorbike{
+    font-size: 10px;
+    text-align: center;
+    font-style: italic;
+    padding: 20px;
+    font-weight: 700;
+}
+
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: $dark-gray;   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    p{
+        font-size: 16px;
+        color: $white;
+    }
+}
+
+.footer-social-media-container{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    gap:20px
+    a{
+        cursor: pointer;
+    }
+}
+
+.footer-icon-instagram{
+    @include iconPageSpan(30px,30px);
+    background-image: url('../Assets/instagram_white_icon.png');
+}
+
+.footer-icon-whatsapp{
+    @include iconPageSpan(30px, 30px);
+    background-image: url('../Assets/whatsapp_icon_white.png');
+}
+.footer-icon-facebook{
+    @include iconPageSpan(30px,30px);
+    background-image: url('../Assets/facebook_white_icon.png');
 }
