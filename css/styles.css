@@ -209,6 +209,18 @@ a {
   background-image: url("../Assets/indoorbike_icon.png");
 }
 
+.icon-warn {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  vertical-align: text-bottom;
+  background-image: url("../Assets/warn-icon.png");
+}
+
 .extra-subtitle-indoorbike {
   font-size: 10px;
   text-align: center;

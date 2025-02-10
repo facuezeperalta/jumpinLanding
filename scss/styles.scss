@@ -240,6 +240,11 @@ a{
     
 }
 
+.icon-warn{
+    @include iconPageSpan(30px, 30px );
+    background-image: url('../Assets/warn-icon.png');
+}
+
 .extra-subtitle-indoorbike{
     font-size: 10px;
     text-align: center;
