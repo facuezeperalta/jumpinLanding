@@ -49,7 +49,11 @@ html{
     background-repeat: no-repeat;
     vertical-align: text-bottom;
 }
-
+@mixin bgClases(){
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 //navBar mobile
 .mobile-menu{
     background-color: $blackCard;
@@ -316,8 +320,28 @@ footer{
     height: 400px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-evenly;  
+   
 }
+
+.indoorbikeClase{
+    background-image: url('../Assets/Spining.png');
+    @include bgClases();
+}
+
+.funcionalIndoorClase{
+    background-image: url('../Assets/ClasesBGImage.png');
+    @include bgClases();
+}
+
+.musculacionBgImage{
+    background-image: url('../Assets/MusculacionBG.png');
+    @include bgClases();
+}
+
+
+
+
 
 .clase-horarios-container{
     display: flex;
@@ -331,6 +355,7 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    text-align: center;
 }
 
 .clase-hora{
@@ -343,6 +368,12 @@ footer{
 .clase-dia-verde{
     font-size: 20px;
     color: $greenJumpin;
+
+}
+
+.clase-dia-pink{
+    font-size: 20px;
+    color: $pinkJumpin;
 
 }
 

@@ -311,6 +311,27 @@ footer p {
   justify-content: space-evenly;
 }
 
+.indoorbikeClase {
+  background-image: url("../Assets/Spining.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.funcionalIndoorClase {
+  background-image: url("../Assets/ClasesBGImage.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.musculacionBgImage {
+  background-image: url("../Assets/MusculacionBG.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .clase-horarios-container {
   display: flex;
   flex-direction: column;
@@ -322,6 +343,7 @@ footer p {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  text-align: center;
 }
 
 .clase-hora {
@@ -333,6 +355,11 @@ footer p {
 .clase-dia-verde {
   font-size: 20px;
   color: #59FF4B;
+}
+
+.clase-dia-pink {
+  font-size: 20px;
+  color: #FF56BE;
 }
 
 .clase-horario-day-1 {
