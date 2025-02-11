@@ -285,4 +285,64 @@ footer p {
   background-repeat: no-repeat;
   vertical-align: text-bottom;
   background-image: url("../Assets/facebook_white_icon.png");
+}
+
+.clase-title-pinkLine {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  -webkit-text-decoration: underline 5px;
+          text-decoration: underline 5px;
+  text-decoration-color: #FF56BE;
+  color: #FFFFFF;
+}
+
+.clase-container {
+  background-color: #3B3A3A;
+  margin-bottom: 20px;
+  width: 75%;
+  max-width: 300px;
+  min-width: 230px;
+  margin: 50px auto 20px;
+  padding: 10px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.clase-horarios-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clase-horario-day-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.clase-hora {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.clase-dia-verde {
+  font-size: 20px;
+  color: #59FF4B;
+}
+
+.clase-horario-day-1 {
+  background-color: #BFBFBF;
+  padding: 0px 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-bottom: 20px;
+  width: 90%;
+  padding: 20px;
+  background: rgb(141, 141, 141);
+  background: linear-gradient(180deg, rgba(141, 141, 141, 0.4010738084) 100%, rgba(24, 31, 39, 0.3282446768) 100%);
 }/*# sourceMappingURL=styles.css.map */

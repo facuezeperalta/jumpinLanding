@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
+$ligthgray: #BFBFBF;
 $dark-gray: #3B3A3A;
 $greenJumpin: #59FF4B;
 $pinkJumpin: #FF56BE;
@@ -291,3 +291,97 @@ footer{
     @include iconPageSpan(30px,30px);
     background-image: url('../Assets/facebook_white_icon.png');
 }
+
+// estilos de horarios
+.clase-title-pinkLine{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: underline 5px;
+    text-decoration-color: $pinkJumpin;
+    color: $white;
+}
+
+
+
+
+.clase-container{
+    background-color: $dark-gray;
+    margin-bottom: 20px;
+    width: 75%;
+    max-width: 300px;
+    min-width: 230px;
+    margin: 50px auto 20px;
+    padding: 10px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.clase-horarios-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.clase-horario-day-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.clase-hora{
+    color: $white;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+
+.clase-dia-verde{
+    font-size: 20px;
+    color: $greenJumpin;
+
+}
+
+.clase-horario-day-1{
+    background-color: $ligthgray;
+    padding: 0px 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    padding: 20px;
+    background: rgb(141,141,141);
+    background: linear-gradient(180deg, rgba(141,141,141,0.4010738084296218) 100%, rgba(24,31,39,0.3282446767769608) 100%); 
+}
+
+
+
+
+
+
+
+// .clases-section-container{
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     width: 75%;
+//     min-width: 230px;
+//     max-width: 300px;
+//     height: 350px;
+//     margin: 50px auto 0px;
+//     background-color: $dark-gray;
+//     margin-bottom: 20px;
+//     color: $white;
+//     background-image: url('../Assets/Spining.png');
+//     background-size:cover;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     vertical-align: text-bottom;
+//     border-radius: 20px;
+    
+// }
+
